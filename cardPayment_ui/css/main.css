@@ -1,0 +1,49 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box,
+}
+body
+{
+    /* background: #ddeefc; */
+    background: darksalmon;
+    font-family: 'Lato', sans-serif;
+}
+.container
+{
+    width: 90%
+    max-width: 1000px;
+    padding: 40px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #ccc;
+    align-items: center;
+}
+/*
+*Card Styles
+*/
+
+.card
+{
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    color: #fff;
+    transition: .3 ease all;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    z-index: 2;
+    background: #000;
+}
+.card .front
+{
+    backface-visibility: hidden;
+}
+
+/* TODO: active javascript function */
+.card.active
+{
+    transform: rotateY(180deg)
+}
