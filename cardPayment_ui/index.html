@@ -10,24 +10,24 @@
 
 <body>
     <div class="container">
-        <section class="card" id='card'>
+        <section class="card " id='card'>
             <div class="front">
-                <div>
+                <div class="logo" id="logo">
                     <img src="img/logos/visa.png" alt="logo">
                 </div>
                 <img src="img/chip-tarjeta.png" class="chip" alt="chip">
-                <div class="datos">
-                    <div class="grupo" id="numero">
+                <div class="data">
+                    <div class="group" id="numero">
                         <p class="label">Numbero Targeta</p>
                         <p class="">#### #### #### ####</p>
                     </div>
                     <div class="flexbox">
-                        <div class="grupo" id="nombre">
+                        <div class="group" id="nombre">
                             <p class="label">Nombre Targeta</p>
                             <p class="nombre">Jhon Doe</p>
                         </div>
-                        <div class="grupo" id="nombre">
-                            <p class="label">Nombre Targeta</p>
+                        <div class="group" id="expiracion">
+                            <p class="label">Expiracion</p>
                             <p class="expiracion">
                                 <span class="month">MM<span>
                                     /
@@ -35,6 +35,26 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="back">
+                <div class="margnetic-bar">
+
+                </div>
+                <div class="data">
+                    <div class="group">
+                        <p class="label">Firm</p>
+                        <div class="firm"><p></p></div>
+                    </div>
+                    <div class="group" id=ccv>
+                        <p class="label">CCV</p>
+                        <p class="ccv"></p>
+                    </div>
+                </div>
+
+                <p class="leyenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde non laudantium assumenda voluptatibus.</p>
+                <a href="" class="bank">MyBank.com</a>
+
             </div>
         </section>
     </div>
