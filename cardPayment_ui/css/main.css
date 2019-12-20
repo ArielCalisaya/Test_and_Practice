@@ -6,7 +6,6 @@
 }
 body
 {
-    /* background: #ddeefc; */
     background: darksalmon;
     font-family: 'Lato', sans-serif;
 }
@@ -20,26 +19,21 @@ body
     flex-direction: column;
     align-items: center;
 }
-/*
-*Card Styles
-*/
 
+
+/* -------------------------- Card Styles*/
 .card
 {
     width: 100%;
     max-width: 550px;
     position: relative;
     color: #fff;
-    transition: .3 ease all;
+    transition: .3s ease all;
     transform: rotateY(0deg);
     transform-style: preserve-3d;
     cursor: pointer;
     z-index: 2;
 
-}
-.card .front
-{
-    backface-visibility: hidden;
 }
 
 /* TODO: active javascript function */
@@ -70,11 +64,13 @@ body
 .front .logo
 {
     text-align: right;
-    min-height: 58px;
+    min-height: 50px;
 }
 
 .front .logo img
 {
+
+    width: 100%;
     object-fit: cover;
     max-width: 80px;
 }
@@ -117,5 +113,13 @@ body
     position: absolute;
     top: 0;
     /* backface-visibility: hidden; */
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
+}
+.back .magnetic-bar {
+	height: 40px;
+	background: #000;
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	left: 0;
 }
