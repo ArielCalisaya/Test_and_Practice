@@ -1,10 +1,12 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <title>CardPayment Form</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -17,14 +19,14 @@
                 <img src="img/chip-tarjeta.png" class="chip" alt="chip">
 
                 <div class="data">
-                    <div class="group" id="numero">
+                    <div class="group" id="number">
                         <p class="label">Numbero Targeta</p>
-                        <p class="numero">#### #### #### ####</p>
+                        <p class="number">#### #### #### ####</p>
                     </div>
                     <div class="flexbox">
-                        <div class="group" id="nombre">
+                        <div class="group" id="name">
                             <p class="label">Nombre Targeta</p>
-                            <p class="nombre">Jhon Doe</p>
+                            <p class="name">Jhon Doe</p>
                         </div>
                         <div class="group" id="expiracion">
                             <p class="label">Expiracion</p>
@@ -37,26 +39,73 @@
                 </div>
             </div>
 
-            <!-- <div class="back">
+            <div class="back">
                 <div class="magnetic-bar"></div>
 
                 <div class="data">
-                    <div class="group" id="firma">
+                    <div class="group" id="firm">
                         <p class="label">Firm</p>
-                        <div class="firma"><p></p></div>
+                        <div class="firm"><p>hola</p></div>
                     </div>
                     <div class="group" id=ccv>
                         <p class="label">CCV</p>
                         <p class="ccv"></p>
                     </div>
                 </div>
-
                 <p class="leyenda">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde non laudantium assumenda voluptatibus.</p>
-                <a href="" class="bank">MyBank.com</a>
+                <a href="https://github.com/ArielCalisaya" class="bank" target="_blank" rel="noreferrer noopener">git: ArielC</a>
 
-            </div> -->
+            </div>
         </section>
+        <div class="container-btn">
+            <button class="btn-open-form" id="btn-open-form">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+
+
+        <form action="" id="card-form" class="card-form">
+			<div class="group">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumber" maxlength="19" autocomplete="off">
+			</div>
+			<div class="group">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputName" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="group expiration">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="group-select">
+							<select name="month" id="selectMes">
+								<option disabled selected>Month</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="group-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Year</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="group ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+			<button type="submit" class="btn-submit">Enviar</button>
+		</form>
+
+
+
+
     </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="js/functional.js">
 
