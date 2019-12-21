@@ -104,3 +104,20 @@ form.selectYear.addEventListener('change', (e) => {
     yearExpiration.textContent = e.target.value.slice(2);
     InitFront()
 })
+
+
+// CCV
+form.inputCCV.addEventListener('keyup', () => {
+    if(!card.classList.contains('active')){
+        card.classList.toggle('active');
+    }
+
+    form.inputCCV.value = form.inputCCV.value
+    // del spaces
+    .replace(/\s/g, '')
+
+    // del letters
+    .replace(/\D/g, '')
+
+    ccv.textContent = form.inputCCV.value;
+})
