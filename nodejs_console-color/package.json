@@ -1,0 +1,22 @@
+{
+  "name": "nodejs_backend",
+  "version": "1.0.0",
+  "description": "testing Server on nodejs",
+  "main": "Test-node.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Test-node.js"
+  },
+  "keywords": [
+    "nodejs",
+    "test",
+    "server",
+    "testing"
+  ],
+  "author": "Mr. Mommon",
+  "license": "ISC"
+}
