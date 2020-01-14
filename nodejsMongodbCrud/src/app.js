@@ -12,7 +12,6 @@ const indexRoute = require('./routes/index')
 mongoose.connect('mongodb://localhost/mongo-crud', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useCreateIndex: true
 })
     .then(db => console.log('DB conected'))
     .catch(err => console.log(err))
@@ -33,7 +32,13 @@ app.use('/', indexRoute);
 
 // middleware
 app.use(morgan('dev'));
-app.use(express.urlencoded({extended:false}));
+
+app.use(express
+    .urlencoded(
+        {
+            extended: false
+        }
+    ));
 
 // start server
 app.listen(app.get('port'), () => {
