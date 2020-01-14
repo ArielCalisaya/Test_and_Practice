@@ -1,13 +1,45 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mongo Crud App</title>
-</head>
-<body>
-    <div class="container">
-        <h1>Initial template</h1>
+<%- include('partials/_header') -%>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card" id="card-container">
+                <div class="card-body ">
+                    <form action="/add" method="POST">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="tittle" placeholder="ingresar titulo">
+                        </div>
+                        <div class="form-group">
+
+                            <textarea class="form-control" placeholder="Descripción" name="description" id="" cols="60"></textarea>
+                        </div>
+                        <div class="add-button"></div>
+                            <button class="btn btn-success btn-block">Añadir</button>
+                        </div >
+                    </form>
+                </div>
+            </div>
+
+            <!-- list To do -->
+            <div class="col-md-7">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>N°</th>
+                            <th>Titulo</th>
+                            <th>Descripción</th>
+                            <th>Operación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>        
     </div>
-</body>
-</html>
+</div>
+
+
+<%- include('partials/_footer') -%>
