@@ -14,4 +14,4 @@ router.post('/add', (req, res) => {
 
 module.exports = router;
 
-// something is goind wrong req.body == undefined
+// something is going wrong req.body == undefined
