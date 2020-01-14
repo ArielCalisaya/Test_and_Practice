@@ -21,8 +21,11 @@ mongoose.connect('mongodb://localhost/mongo-crud', {
 
 
 // settings
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3200);
 app.set('views', path.join(__dirname, 'views'));
+
+// hbars \¡?!/
+
 app.set('view engine', 'ejs');
 
 
