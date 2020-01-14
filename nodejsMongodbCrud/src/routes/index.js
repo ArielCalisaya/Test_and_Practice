@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Todo = require('../models/todos');
+const Todo = require('../model/todo-model');
 
 router.get('/', (req, res) => {
     res.render('to-do')

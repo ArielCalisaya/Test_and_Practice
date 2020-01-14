@@ -16,8 +16,7 @@ mongoose.connect('mongodb://localhost/mongo-crud', {
 })
     .then(db => console.log('DB conected'))
     .catch(err => console.log(err))
-
-
+    
 
 
 // settings
