@@ -3,7 +3,7 @@ const schema = mongoose.Schema
 
 const TodoSchema = new schema({
     title: String,
-    desc: String,
+    description: String,
     status: {
         type: Boolean,
         default: false

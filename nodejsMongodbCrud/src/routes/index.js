@@ -4,11 +4,12 @@ const router = express.Router();
 const Todo = require('../model/todo-model');
 
 router.get('/', (req, res) => {
-    res.render('to-do')
+    res.render('index')
 });
 
-router.post('/add', (req, res) => {
+router.post('/agregar', (req, res) => {
     console.log(req.body);
+    
     res.send('Recivido')
 })
 
