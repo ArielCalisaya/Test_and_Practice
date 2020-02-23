@@ -23,5 +23,5 @@ let video = document.getElementById('video');
             
             canvas.height = video.clientHeight;
             
-            ctx.drawImage(video, 0, 0);
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height -50);
         }
